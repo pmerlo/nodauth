@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": ["port", "mongodb", "jwt"],
+  "properties": {
+    "port": {
+      "type": "integer"
+    },
+    "mongodb": {
+      "type": "object",
+      "required": ["url", "db"],
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "db": {
+          "type": "string"
+        }
+      }
+    },
+    "jwt": {
+      "type": "object",
+      "required": ["secret", "algorithm", "expirySeconds"],
+      "properties": {
+        "secret": { "type": "string" },
+        "algorithm": {
+          "type": "string",
+          "enum": ["HS256"]
+        },
+        "expirySeconds": { "type": "number" }
+      }
+    }
+  }
+}

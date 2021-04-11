@@ -1,0 +1,35 @@
+{
+  "name": "nodauth",
+  "version": "0.5.0",
+  "description": "Authentication service based on JWT",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev nodemon",
+    "prod": "NODE_ENV=prod node app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmerlo/nodauth.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "jwt",
+    "auth"
+  ],
+  "author": "p.merlofeter@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmerlo/nodauth/issues"
+  },
+  "homepage": "https://github.com/pmerlo/nodauth#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonschema": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6"
+  }
+}

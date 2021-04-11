@@ -1,0 +1,12 @@
+{
+  "port": 3000,
+  "mongodb": {
+    "url": "mongodb://root:rootpassword@localhost:27017",
+    "db": "mydb"
+  },
+  "jwt": {
+    "secret": "my_secret_key",
+    "algorithm": "HS256",
+    "expirySeconds": 300
+  }
+}
