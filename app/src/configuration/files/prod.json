@@ -1,7 +1,7 @@
 {
   "port": 3000,
   "mongodb": {
-    "url": "mongodb://root:rootpassword@localhost:27017",
+    "url": "mongodb://root:rootpassword@db:27017",
     "db": "mydb"
   },
   "jwt": {
